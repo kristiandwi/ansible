@@ -1,0 +1,6 @@
+---
+- hosts: 
+  become: false
+  tasks:
+    - name: pull repository
+      shell: "git pull origin master"
