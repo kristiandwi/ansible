@@ -3,11 +3,7 @@
   become: false
   tasks:
     - name: pull repository
-      shell: 
-         "ls -l"
-      args:
-        chdir: "/home/bisnis/public" 
+      shell: 'ls -la'
       register: fileout
-      
     - debug: 
             var: fileout.stdout_lines
