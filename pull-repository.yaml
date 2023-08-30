@@ -4,3 +4,5 @@
   tasks:
     - name: pull repository
       shell: "git pull origin master"
+      args:
+        chdir: "/home/bisnis/public" 
