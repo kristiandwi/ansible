@@ -3,6 +3,10 @@
   become: false
   tasks:
     - name: pull repository
-      shell: "./deploy.sh"
+      shell: 
+         "./deploy.sh"
       args:
         chdir: "/home/bisnis/public" 
+      register: fileout
+      
+    - debug: msg="{{ fileout.stdout-lines }}"
