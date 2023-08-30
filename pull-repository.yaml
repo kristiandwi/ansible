@@ -4,6 +4,6 @@
   tasks:
     - name: pull repository
       shell: 'ls -la'
-      register: fileout
+      register: command_output
     - debug: 
-            var: fileout.stdout_lines
+            var: command_output.stdout_lines
