@@ -3,7 +3,9 @@
   become: false
   tasks:
     - name: pull repository
-      shell: ls -la
+      shell: git pull origin master
+      args:
+        chdir: /home/bisnis/public
       register: command_output
     - debug: 
             var=command_output.stdout_lines
