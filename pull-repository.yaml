@@ -3,7 +3,7 @@
   become: false
   tasks:
     - name: pull repository
-      shell: 'ls -la'
+      shell: ls -la
       register: command_output
     - debug: 
             var=command_output.stdout_lines
