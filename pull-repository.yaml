@@ -9,4 +9,5 @@
         chdir: "/home/bisnis/public" 
       register: fileout
       
-    - debug: fileout.stdout_lines
+    - debug: 
+            var: fileout.stdout_lines
