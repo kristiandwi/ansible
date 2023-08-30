@@ -9,4 +9,4 @@
         chdir: "/home/bisnis/public" 
       register: fileout
       
-    - debug: msg="{{ fileout.stdout-lines }}"
+    - debug: fileout.stdout_lines
