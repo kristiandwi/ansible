@@ -4,7 +4,7 @@
   tasks:
     - name: pull repository
       shell: 
-         "./deploy.sh"
+         "ls -l"
       args:
         chdir: "/home/bisnis/public" 
       register: fileout
